@@ -1,0 +1,131 @@
+<html>
+<meta charset="utf-8">
+<script src="../faltante.js"></script>
+
+
+<script>
+var img="www.sexto2001.com.ar/ig.gif";
+var vervista;
+
+function change(img) 
+{
+document.all.imagen.height=450;
+document.all.imagen.src = img;
+};
+
+function preview(thum) 
+{
+document.all.thumb.src = "lib/"+ document.doublecombo.example.options.selectedIndex + "/thum/" + thum + "_t.jpg";
+};
+var cant;
+
+</script>
+
+<body>
+<table border="1" cellspacing=0 cellpadding=3 width="95%" bordercolor="darkblue" align="center">
+<tr>
+<td bgcolor="softblue"  align="center" colspan=2>
+	<font size="7" color="#000080">SEXTO <font color="black">2001</font> PHILIPS</font>
+	<br>
+	<font size="4" color="darkred" face=arial>la version web de la flamante division tecnica</font>
+</td>
+</tr>
+<tr>
+
+
+<td bgcolor="lightblue" align="center" width="45%">
+
+	<form name="doublecombo">
+	<select name="example" size="1" onChange="redirect(this.options.selectedIndex)" >
+	<option>--Selecciona una opcion--</option>
+	<option>Fotos Cancun</option>
+	<option>Los Mariachi Locos-Personajes</option>
+	<option>Alcohol, fiel compañero</option>
+	<option>Lo que esperado: Quebrados</option>
+	<option>Companieros de emociones</option>
+	<option>Fotos de SEXTO HISTORICAS</option>
+	<option>Fotos Fiesta? Seccion FIESTA</option>
+	</select>
+	<br>
+	<select name="stage2" size="6" onchange="preview(stage2.options[stage2.options.selectedIndex].text);">
+	<option value="#">--selecciona la seccion--</option>
+	</select>
+	</form>
+
+<font size=1>descripciones por cuenta del Ruso, ante cualquier queja, consulte a su medico</font>
+	</td>
+
+<td bgcolor="lightblue" align="center">
+
+<script>
+
+var groups=document.doublecombo.example.options.length;
+var group=new Array(groups);
+
+
+for (i=0; i<groups; i++){
+group[i]=new Array();}
+
+group[0][0]=new Option("--selecciona una opcion--","");
+
+</script>
+
+<script src="output2.js"></script>
+
+<script>
+
+
+var temp=document.doublecombo.stage2;
+
+
+function redirect(x){
+for (m=temp.options.length-1;m>0;m--){
+temp.options[m]=null;
+}
+
+for (i=0;i<group[x].length;i++){
+temp.options[i]=new Option(group[x][i].text,group[x][i].value);
+}
+}
+
+function go(){
+change(temp.options[temp.selectedIndex].value);
+}
+
+</script>
+
+
+<table width="100%" bgcolor="lightblue" align="center" border="0" cellspacing=0 cellpadding=0>
+   <tr id="prev">
+      <td align="right"  style="background-color:silver;font-size:18;">Vista Previa :<br><font size=2 ></font></td>
+      <td align="center" style="background-color:silver;"><img id="thumb" src="ig.gif" height=70></td>
+    </tr>
+
+    <tr height=4><td></td>
+    </tr>
+
+    <tr>
+<td width="50%">Cantidad de Fotos: <script>document.write(cant)</script></td>
+      <td width="50%"><input type="button" value="quiero ver ya!" style="width:100%;" name="B1" onClick="go();"></td>
+
+    </tr>
+  </table>
+
+
+
+</td>
+</tr>
+<tr>
+
+<td colspan=2 align="center">
+<img id="imagen" src="../textos/cancmem.jpg">
+</td>
+</tr>
+
+<tr><td colspan=2 align="center" bgcolor="lightblue">
+<font size=3>Si no te anda el sistema y no podes ver las imagenes, hace click <a href="fotoplain.htm">aca</a> y lucha contra el sistema</font></td></tr>
+
+</table>
+<strong><big><center><a href="#" onclick="history.back()">&lt;&lt; VOLVERGA</a>  <a href="../index.html">HOME</a></center></strong></big>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+<head><meta charset="utf-8"></head>
+<!-- Reconstruida en la replica: el plain.htm original no fue archivado (404).
+     Lista las mismas fotos de output2.js como links comunes, que era su proposito. -->
+<body bgcolor="lightblue">
+<font face="arial" size=2>
+<script>
+var group = []; for (var i = 0; i < 7; i++) group[i] = [];
+</script>
+<script src="output2.js"></script>
+<script>
+for (var g = 1; g < group.length; g++) {
+  for (var j = 0; j < group[g].length; j++) {
+    var a = document.createElement("a");
+    a.href = group[g][j].value;
+    a.target = "foto";
+    a.textContent = group[g][j].text;
+    document.body.lastElementChild.parentNode.querySelector("font").appendChild(a);
+    document.querySelector("font").appendChild(document.createElement("br"));
+  }
+  document.querySelector("font").appendChild(document.createElement("hr"));
+}
+</script>
+</font>
+</body>
+</html>

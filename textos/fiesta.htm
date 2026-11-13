@@ -1,0 +1,139 @@
+<html>
+<meta charset="utf-8">
+<script src="../faltante.js"></script>
+<body>
+
+<script lang="javascript">
+
+function PopWin(file,ancho,alto)
+{
+window.open(file,"Imagen","toolbar=0,location=0,status=0,menubar=0,scrollbars=auto,resizable=0,width=" + ancho + ",height=" + alto + ",top=100,left=100" );
+}
+
+var img="www.sexto2001.com.ar/ig.gif";
+var vervista;
+
+function change(img) 
+{
+document.all.imagen.height=450;
+document.all.imagen.src = img;
+};
+
+function preview(thum) 
+{
+document.all.thumb.src = "fotosfiesta/thum/" + thum + "_t.jpg";
+};
+var cant;
+
+
+</script>
+
+<table border="1" cellspacing=0 cellpadding=3 width="90%" bordercolor="darkblue" align="center">
+<tr>
+<td bgcolor="softblue" align="center" colspan=3>
+<font size="7" color="#000080">SEXTO <font color="black">2001</font> PHILIPS</font>
+<br>
+<font size="4" color="darkred" face=arial>la version web de la flamante promocion tecnica</font>
+</td>
+</tr>
+<tr>
+<td bgcolor="lightblue" align="center"  colspan=3>
+<font size="6" color="black">LA FIESTA: El dia despues</font>
+<br>
+</td>
+</tr>
+
+<tr>
+<td bgcolor="lightyellow" align="center"  colspan=3>
+<font size="5" color="black">las fotos de la fiesta, recien llegadas</font>
+<br>
+</td>
+</tr>
+
+
+<tr>
+<td width=50% bgcolor="lightyellow" align=center>
+<select name="stage2" id="stage2" size="7" onchange="preview(stage2.options[stage2.options.selectedIndex].text);"></select>
+<script src="fotosfiesta.js">
+</script>
+</select>
+</td>
+<td width=50%  bgcolor="lightyellow" align=center>
+<img id="thumb" src="../ig.gif" height="100">
+<input type="button" value="quiero ver ya!" style="width:100%;" name="B2" onClick="PopWin(document.all.stage2.options[stage2.options.selectedIndex].value,'520','520');">
+</td>
+</tr>
+
+
+
+<tr>
+<td align="left"  bgcolor="lightblue"  colspan=3>
+<h3>Resumen: Arqueo de caja</h3>
+<p>
+- 1 dia bastante fresco<br>
+- 1 boliche plagado de pornografia y buenos grafitis<br>
+- 1 camionero hdp<br>
+- 2 camioneros del tomate que por guita para el vino hacen cualquier cosa<br>
+- 1 patrullero ortiva<br>
+- 1 tano que se cae del camion<br>
+- 2 tobillos esguinzados (pupeno, tano)<br>
+- 124 rodillas lastimadas en el camion<br>
+- 20+ botellas de alcohol vaciadas en el camion<br>
+- 1 video de fin de curso copado<br>
+- 1 banda del gordo, semidesnuda, ebria, descontrolada y con mucha<br>
+adrenalina!!
+- 3 quiebres (holly, morsi, tano) (me falta alguno?)<br>
+- 1 CAIX LLENO HASTA LAS PELOTAS!<br>
+</p>
+</td>
+</tr>
+
+
+<tr>
+<td align="center" colspan=3  bgcolor="lightblue" ><h2>EL TEMA PRINCIPAL:<u style="color:red">LA BANDA DEL GORDO</u></H2><br>
+<table width="70%"  bgcolor="lightblue" >
+
+<tr>
+<td>
+<big><code>
+Se viene la banda del gordo,<br>
+se viene la banda del gordo,<br>
+se viene la banda del gordo,vamos a morfar<br>
+<br>
+A los cocineros le pide que dejen la vida,<br>
+que al gordo le preparen una suprema con fritas<br>
+el gordo esta desesperado y quiere comida<br>
+el arpe es una aplanadora y se come la vida<br>
+<br>
+(repite estribillo)
+<br>
+<br>
+</code><small>nota: en caso de ebriedad, el estribillo se acepta como:</small><code><br>
+Se gordo la viene del banda,<br>
+se banda la viene del gordo,<br>
+se gordo la banda del viene, vamo a escabiar.<br>
+<br><br>
+</code>
+</big><center>
+<i>(musica oficialmente choriada a Attaque, de su tema AMIGO)</i></center>
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+
+<tr>
+<td colspan=3 style="background-color:silver;text-align:center;border:groove;border-width:2;cursor:text;"><br><h3>Bajate el MP3 de LA BANDA DEL GORDO (live in colegiales)</h3>
+<big>Si, yase, suena como el toor... fijense que ahora hay una version un poco mejor.</big><br>
+<a href="la_banda_del_gordo.mp3"><img src=winmp.gif height="40"></a><br>
+<code>bajalo aqui ya mesmito !</code><br>
+<small>bajate la version vieja, si queres, <a href="la_banda_del_gordo_old.mp3">aqui</a></small>
+
+</td>
+</tr>
+
+</table>
+<strong><big><center><a href="#" onclick="history.back()">&lt;&lt; VOLVERGA</a></center></strong></big>
+</body>
+</html>

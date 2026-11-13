@@ -1,0 +1,345 @@
+<html>
+<meta charset="utf-8">
+<script src="faltante.js"></script>
+<script src="https://unpkg.com/@ruffle-rs/ruffle@0.2.0/ruffle.js" integrity="sha384-gpXIoa++6YLN7AM+Z+FrLq3On+D4gkj+P0mLjmEcUbyBwMq5XnWm2hlTCHJ/DDVb" crossorigin="anonymous"></script>
+
+<head>
+<title>SEXTO 2001</title>
+</head>
+
+<style>
+.bot {background-color:silver;text-align:center;border:solid silver;border-width:2;cursor:pointer;}
+.botup {background-color:silver;text-align:center;border:outset;border-width:2;cursor:pointer;border-top-color:white;border-left-color:white;}
+.bar {background-color:silver;text-align:center;border:groove;border-width:2;cursor:text;}
+.aes {color:black;text-decoration:none; width: 100%; height: 100%; vertical-align: middle;}
+option {font-size:17pt;color:darkred;font-family:arial;}
+</style>
+
+
+<script lang="javascript">
+
+function PopWin(file,ancho,alto)
+{
+window.open(file,"Imagen","toolbar=0,location=0,status=0,menubar=0,scrollbars=auto,resizable=0,width=" + ancho + ",height=" + alto + ",top=100,left=100" );
+}
+
+function estado(texto)
+{
+if (texto == ''){texto=' ';
+}
+document.all.barra.innerText = texto;
+}
+</script>
+
+<body bgcolor="lightblue">
+
+
+<div style="position:absolute;top:-10; left:-10" >
+<img src="actual.gif" >
+</div>
+
+<div style="position:absolute;top:575; left:15">
+<img src="lavale.gif" height=115>
+</div>
+
+
+
+<table border="1" cellspacing=0 cellpadding=3 width="90%" bordercolor="darkblue" align="center">
+<tr>
+<td bgcolor="softblue" align="center" colspan=2>
+
+<font size="7" color="#000080">SEXTO <font color="black">2001</font> PHILIPS</font >
+
+<br>
+
+<font size="4" color="darkred" face=arial>La Version WEB de la Flamante <b>Promoción</b> Tecnica</font><br><a href="mailto:oculto@example.invalid"><font size="2">oculto@example.invalid</font></a>
+
+</td>
+</tr>
+
+<tr>
+<td align="center" colspan=2 bgcolor="silver">
+
+
+
+<table border=0 width="100%" bgcolor="silver" >
+<tr>
+
+<td width="15%" class="bot" onmouseover="this.className='botup';estado('Entra aqui solo si sos de SEXTO PHILIPS 2001')" onmouseout="this.className='bot';estado('')">
+<a href="seg/index.htm" class="aes">SEXTO-VIP</a>
+</td>
+
+<td width="16%" class="bot" onmouseover="this.className='botup';estado('Textos, composiciones y otras yerbas. Ademas, podes dejar tus mensajes!')" onmouseout="this.className='bot';estado('')">
+<a href="textos/index.htm" class="aes">EDITORIAL</a>
+</td>
+
+<td width="15%" class="bot" onmouseover="this.className='botup';estado('Todo lo que queres saber de la fiesta. Fotos, Resumenes.Todo')" onmouseout="this.className='bot';estado('')">
+<a href="textos/fiesta.htm" style="color:red;text-decoration:none; width: 100%; height: 100%; vertical-align: middle;">LA FIESTA</a>
+</td>
+
+<td  width="14%" class="bot" onmouseover="this.className='botup';estado('Aqui los links a otras paginas, sponsors y demases cosas raras.')" onmouseout="this.className='bot';estado('')">
+<a href="links.htm" class="aes">LINKS</a>
+</td>
+
+<td width="19%" class="bot" onmouseover="this.className='botup';estado('Esta es la sexxion de escraches de todo tipo')" onmouseout="this.className='bot';estado('')">
+<a href="fotos/caza.htm" class="aes">EL CAZAGORDAS</a>
+</td>
+
+<td width="18%" class="bot" onmouseover="this.className='botup';estado('La seccion que esperabas, la de las FOTOS de CANCUN!!')" onmouseout="this.className='bot';estado('')">
+<a href="fotos/cancun.htm" class="aes">ZONA CANCUN</a>
+</td>
+</tr>
+<tr>
+<td class="bar" colspan=6>
+<code  id="barra">(pone el mouse arriba de los cartelitos pa ver que hay detras de cada uno)</code>
+</td>
+</tr>
+</table>
+
+</tr>
+
+<tr>
+<td align="center" colspan=1 bgcolor="white">
+
+<table border="0" cellspacing="0" cellpadding="0" width=350>
+<tr>
+<td><marquee behavior="alternate" SCROLLDELAY="150" SCROLLAMOUNT="5"> <big><strong style="color:red"><code> El Mensajodromo </code></strong></big></marquee></td>
+</tr>
+  <tr>
+    <td width="100%" style="height:80px; border: inset 2px;vertical-align: top; background-color:lightyellow;">
+	<div id="msgbox" style="margin: 3px; font-family: arial; font-size:13px;" > </div>
+    </td>
+  </tr>
+</table>
+
+<script src="news.js"></script>
+
+<script>
+function slidemessage(){
+if (curmsg<messages.length-1)
+curmsg++
+else
+curmsg=0
+msgbox.innerHTML = messages[curmsg]
+setTimeout("slidemessage()",5000)
+}
+slidemessage()
+
+// (el popup del sponsor textos/mast.htm no fue archivado)
+</script>
+
+<hr>
+<center><img src="dolar.gif"></center>
+<small>Actualizado:
+<script>var dia = new Date();
+document.write(dia);
+</script></small>
+
+</td>
+<td align="center" colspan=1 bgcolor="white">
+<big><strong><b style="color:darkblue">EL ENCUENTRODROMO:</b></strong></big><br>
+<select name="fetas" size="5" style="font-size:12pt;font-face:arial;background-color:lightyellow;font-weight:bold" >
+        <script src=fiestas.js></script>
+</select><br>
+<b>Aca podras ver cuando y donde nos encontraremos en el verano</b><br>
+<small>Sumate a la <a href="textos/index.htm">LISTA DE MAILS</a> y enterate via mail!</small>
+</td>
+
+</tr>
+
+
+</td>
+</tr>
+<tr>
+<td align="center" colspan=2 bgcolor="white">
+
+<table border=0 align="center" width="90%">
+<tr>
+<td>
+<center>
+<code>para identificarnos, ingresa a:</code><br>
+<u><font face=arial size=5 style="color:darkblue" onclick="PopWin('pront/index.htm','620','450')" style="cursor:pointer;">PRONTUARIOS</font></u><br><small>(necesitas FLASH)</small>
+<br>
+<br><code>o sino, a:</code><br>
+<u><font face=arial size=5 style="color:darkblue" onclick="window.open('textos/menu.jpg','Imagen','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=550,height=400,top=200,left=200' );" style="cursor:pointer;">Menu del Dia</font></u>
+<br>
+<br><code>o sino, a:</code><br>
+<u><font face=arial size=5 style="color:darkblue" onclick="PopWin('textos/quien.htm','800','460')" style="cursor:pointer;">QUIEN ES QUIEN?</font></u>
+</center>
+</td>
+<td bgcolor="white">
+<center>
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash5r42.cab#version=5,0,42,0" width="350" height="150" align="middle">
+                      <param name=movie value="verano/comp/compara.swf">
+                      <param name=quality value=high>
+                      <embed src="verano/comp/compara.swf" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="350" height="150" align="middle">
+                      </embed> 
+                    </object>
+</center>
+
+</td>
+</tr></table>
+
+<hr>
+
+
+
+<!--One step to installing script-->
+
+<!--1) Copy everything below and paste it to the BODY of your site-->
+
+<!--To add more images, add them to variable myPix-->
+<center><u><h1 style="color:green">ZONA DE FOTOS GRUPALES</h1></u></center>
+<b><font face="arial" size=3><a href="javascript:doPrevious()">&lt; &lt; Previa</a> <font
+
+    color="red">- HAY MAS FOTOS -</font> <a href="javascript:doNext()">Proxima &gt; &gt;</a></font></b>
+
+
+
+<p align="center"><img name="myPicture" src="grup_fiest.jpg" height=470 >
+
+
+<script language="JavaScript">
+
+<!--
+
+
+
+//Slide Show script (this notice must stay intact)
+
+//For this and more scripts
+
+//visit java-scripts.net or http://wsabstract.com
+
+
+
+var myPix = new Array("grup_fiest.jpg","grup_foto.jpg","grup_todos.jpg","grup_noche.jpg","grup_wet.jpg","grup_eze.jpg","grup_tul.jpg","grup_esc.jpg","grup_barcos.jpg","grup_ismuj.jpg","grup_vale.jpg")
+var myDesc = new Array("Foto Grupal FIESTA","Foto grupal escolar","Playa del Hotel Oasis","Noche de Ma-ax-o","Wet & Wild","Ezeiza: recien empezamos","LA visita cultural: TULUM","Levantese de la escalera porfavor!","Todos al agua! (Jungle Tour)","Saliendo para Isla Mujeres","Todos al agua II (La valentina)")
+
+var thisPic = 0
+
+var cant = 10
+
+
+function doPrevious() {
+
+    if (document.images && thisPic > 0) {
+
+	thisPic--;
+	act.innerText = thisPic+1;
+	desc.innerText = myDesc[thisPic];
+	document.myPicture.src=myPix[thisPic];
+
+    }
+
+}
+
+
+
+function doNext() {
+
+    if (document.images && thisPic < cant) {
+	
+	thisPic++;
+	act.innerText = thisPic+1;
+	desc.innerText = myDesc[thisPic];
+	document.myPicture.src=myPix[thisPic];
+
+    }
+
+}
+
+// -->
+
+</script>
+
+<br><b><font face="arial" size=3><a href="javascript:doPrevious()">&lt; &lt; Previa</a> <font
+
+    color="red">- Total Fotos Grupales: <span id="act">1</span>/<script>document.write(cant + 1)</script> -</font> <a href="javascript:doNext()">Proxima &gt; &gt;</a></font></b><br>
+<font size="3" face="arial"><b style="color:darkblue">Descripcion: </b><em><b><span id="desc">Foto grupal Fiesta</span></b></em></font>
+
+
+
+
+
+</td>
+</tr>
+
+<tr>
+<td align="center" colspan="2" nowrap bgcolor="white">
+
+
+<!--Esta tabla engloba al mail y al about-->
+<table border=0 width="100%" align="center" cellspacing=0 cellpadding=10>
+<tr>
+<td align="center" bgcolor="white" align="center" colspan=1 >
+
+<center>
+<font face=arial>Chekea tu mail [tunombre<strong style="color:red">@soviet.com.ar</strong>]</font><br>
+<b>o simplemente <a href="http://sovietinc.mail.everyone.net/email/scripts/useragreement.pl">create uno gratis!</a></b><br>
+</center>
+
+
+<table border="1" cellspacing="0" cellpadding="0" width=300 bordercolor="#000000" align="center">
+  <tr> 
+    <td height="16"> 
+      <table border="0" cellspacing="0" cellpadding="2" width="100%" height="100%">
+        <form name="login_form" action="#" onsubmit="alert('Este servicio ya no existe (replica del sitio de 2001)');return false">
+          <tr bgcolor="#3399CC"> 
+            <td height="2" nowrap width="39%" align="left"> <font color="#000000" face="Verdana, Arial, Helvetica, sans-serif" size="2">Email Login</font><br>
+              <input type="text" size="12" name="loginName" value="">
+            </td>
+            <td height="2" nowrap width="36%" align="left"> 
+              <font color="#000000" face="Verdana, Arial, Helvetica, sans-serif" size="2">Password</font><br>
+              <input type="password" size="12" name="user_pwd" value="">
+            </td>
+            <td height="2" nowrap width="25%" valign="bottom" align="left"> 
+              <input type="submit" name="login" value="Login">
+            </td>
+          </tr>
+          <tr bgcolor="#3399CC"> 
+            <td height="2" nowrap colspan="3" valign="middle" align="right"> 
+              <p><font color="#000000" face="Verdana, Arial, Helvetica, sans-serif" size="2">No sos usuario? </font> <a href="http://sovietinc.mail.everyone.net/email/scripts/useragreement.pl"><font color="#000000" face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>Obtene uno gratis aca!</b></a>!</font></p>
+            </td>
+          </tr>
+        </form>
+      </table>
+    </td>
+  </tr>
+</table>
+
+</td>
+
+<td>
+<center>
+<small><b>VOLVIO EL LIBRO DE VISITAS!</b></small>
+<a href="http://pub44.bravenet.com/guestbook/show.php?usernum=3720730086&cpv=1">
+<img src="fotos/sextovis.gif" height="50"><br><small>Hace click aca!</small></a><br><small>Todavia no te enteraste? agregate a la <a href="textos/index.htm">LISTA DE MAILS</a></small>
+</center>
+</td>
+
+<td align="center" bgcolor="silver" align="left" style="border:outset"  cellspacing="0" cellpadding="0" width="210">
+<font face="tahoma" size=2><b>El responsable por<br> todo esto es el <a href="mailto:oculto@example.invalid"><big style="color:red;text-decoration:none;">Ruso</big></a></b></font><br>
+<a href="http://www.soviet.com.ar" target="_blank"><img src="sov3.gif"></a>
+
+
+<br>
+<a href="http://www.soviet.com.ar" target="_blank"><font face="arial" size=2>www.soviet.com.ar</font></a><br>
+<font face="arial" size=1>Asique, por toda esta cagada, puteenlo <a href="mailto:oculto@example.invalid">aqui</a></font>
+</td>
+</tr>
+</table>
+
+
+</td>
+
+
+</tr>
+</table>
+</body>
+<center>
+<font size=1>Nota: el contador estuvo desactivado durante un tiempo hasta el 29/8</font>
+<!-- contador Nedstat quitado: el servicio ya no existe -->
+<font size=1>de SEXTO2001.com.ar quedan todos los derechos reservados SOVIET INC 2001(c)</font>
+</center>
+</html>
